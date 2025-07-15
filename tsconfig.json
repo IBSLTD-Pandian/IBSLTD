@@ -1,0 +1,15 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "types": ["vue"],
+    "paths": {
+      "vue": ["./node_modules/vue"],
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "forceConsistentCasingInFileNames": false,
+    "preserveSymlinks": true
+  }
+}
